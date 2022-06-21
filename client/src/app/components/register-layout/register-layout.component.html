@@ -1,0 +1,24 @@
+<form
+    [formGroup]="form"
+    (ngSubmit)="onSubmit()"
+    class="login__form"
+>
+    <p class="register__title">Create an account</p>
+    <a routerLink="/auth/login" class="login__hint login__hint2">Already have an account? <span>Log in</span></a>
+    <label class="form__input-hint">User name
+        <input formControlName="name" class="form__input" type="text" [ngClass]="{'invalid': form.get('name')?.invalid && form.get('name')?.touched }">
+    </label>
+    <label class="form__input-hint form input_pass">Email address
+        <input formControlName="email" class="form__input" type="text" [ngClass]="{'invalid': form.get('email')?.invalid && form.get('email')?.touched }">
+    </label>
+    <label class="form__input-hint form input_pass">Password
+        <input formControlName="password" class="form__input" type="password" [ngClass]="{'invalid': form.get('password')?.invalid && form.get('password')?.touched }">
+    </label>
+    <p class="register__policy">
+        By creating an account, you agree to our
+        <a href="">Terms of use</a> and
+        <a href="">Privacy Policy</a>.
+    </p>
+    <button class="btn__submit" type="submit" [disabled]="form.invalid || form.disabled" >Create an account</button>
+    <a routerLink="/auth/login" class="login__hint login__hint2">Already have an account? <span>Log in</span></a>
+</form>

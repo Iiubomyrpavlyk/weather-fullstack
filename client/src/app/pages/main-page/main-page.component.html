@@ -1,0 +1,19 @@
+<app-header-layout></app-header-layout>
+
+<section class="welcome__page">
+    <p class="welcome__welcome">Welcome to</p>
+    <h1 class="welcome__title">Minimal Weather</h1>
+    <p class="welcome__descr">A better way to get your daily weather updates. </p>
+    <div class="welcome__auth">
+        <button routerLink="auth/login" class="welcome__login">Sign In</button>
+        <button routerLink="auth/register" class="welcome__register">Sign Up</button>
+    </div>
+</section>
+
+<app-weather-details-layout *ngIf="weatherService.getLocation()"></app-weather-details-layout>
+
+<app-user-account-component *ngIf="auth.isAuthenticated()"></app-user-account-component>
+
+<app-feedback-layout></app-feedback-layout>
+
+<app-footer-layout></app-footer-layout>

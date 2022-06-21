@@ -1,0 +1,80 @@
+.welcome__page {
+    margin: 144px 43px 0 43px;
+    background: url("./../../../assets/images/bg-section.png") center center no-repeat;
+    background-size: cover;
+    height: 700px;
+    border-radius: 14px;
+    padding-top: 158px;
+    padding-left: 145px;
+}
+
+.welcome__welcome {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.welcome__title {
+    margin-top: 37px;
+    color: #fff;
+    font-size: 72px;
+    letter-spacing: 3px;
+    font-weight: 900;
+}
+
+.welcome__descr {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    margin-top: 37px;
+    width: 500px;
+    color: #FFFFFF;
+}
+
+.welcome__auth {
+    margin-top: 37px;
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome__login {
+    width: 125px;
+    height: 47px;
+    padding: 13px 23px;
+    gap: 4px;
+    isolation: isolate;
+    background: #FFFFFF;
+    border-radius: 22px;
+    font-weight: 600;
+    font-size: 17.5px;
+    line-height: 21px;
+    color: #000000;
+    border: none;
+}
+
+.welcome__register {
+    height: 47px;
+    padding: 13px 23px;
+    gap: 4px;
+    isolation: isolate;
+    width: 134px;
+    background: #101010;
+    border-radius: 22px;
+    font-size: 17.5px;
+    line-height: 21px;
+    color: #FFFFFF;
+    border: none;
+}
+
+.welcome__auth > button:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+/*/asd*/
+/*/asd*/
+/*/asd*/
+

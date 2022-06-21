@@ -1,0 +1,41 @@
+<div>
+    <div class="user__account-personal">
+        <img class="user__icon" src="assets/icons/user-circle.svg" alt="user-icon">
+        <div>
+            <p>Personal account</p>
+        </div>
+    </div>
+    <section class="user-locations">
+        <div class="user__account">
+            <div class="user__personal">
+                <div>
+                    <img class="user__img" src="assets/images/avatar.jpg" alt="avatar">
+                </div>
+                <p class="user__name">{{user.name}}</p>
+            </div>
+            <div class="user__email">
+                <span>{{user.email}}</span>
+            </div>
+        </div>
+
+        <div class="location__slider">
+            <carousel [height]="474" [width]="960" [loop]="true" [cellWidth]="312" [borderRadius]="30">
+                <div (click)="onLocationClicked(i)" *ngFor="let loc of locations; let i = index;" [attr.data-index]="i"
+                     class="user__location carousel-cell">
+                    <div class="location__bg" [ngStyle]="{'background':'url(' + loc.imageSrc +') center center no-repeat'}">
+                        <div class="location__temperature">27<span>o</span></div>
+                        <p class="location__name">{{loc.city}}</p>
+                    </div>
+                    <div class="location__short">
+                        <p class="location__date">Tuesday, 21 June</p>
+                        <p class="location__descr">{{loc.description}}</p>
+                        <p class="location__temp">{{loc.minTemp}}°/ {{loc.maxTemp}}°</p>
+                    </div>
+                </div>
+            </carousel>
+        </div>
+
+
+    </section>
+
+</div>

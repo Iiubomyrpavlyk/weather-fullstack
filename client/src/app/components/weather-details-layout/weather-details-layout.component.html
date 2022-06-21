@@ -1,0 +1,124 @@
+<section class="weather__details">
+    <ul class="weather__pagi-days">
+        <li class="day_detail" (click)="wasClicked(0)">
+            <div class="day__info">
+                Tuesday
+                <p class="day__date">21 June</p>
+            </div>
+            <div class="day__img">
+                <img class="day__image" src="{{weatherService.getWeatherIconByDay(0)}}" alt="">
+                <div class="day__temp">
+                    {{weatherService.getTempByDay(0)}}
+                </div>
+            </div>
+        </li>
+        <li class="day_detail" (click)="wasClicked(1)">
+            <div class="day__info">
+                Wednesday
+                <p class="day__date">22 June</p>
+            </div>
+            <div class="day__img">
+                <img class="day__image" src="{{weatherService.getWeatherIconByDay(1)}}" alt="">
+                <div class="day__temp">
+                    {{weatherService.getTempByDay(1)}}
+                </div>
+            </div>
+        </li>
+        <li class="day_detail" (click)="wasClicked(2)">
+            <div class="day__info">
+                Thursday
+                <p class="day__date">23 June</p>
+            </div>
+            <div class="day__img">
+                <img class="day__image" src="{{weatherService.getWeatherIconByDay(2)}}" alt="">
+                <div class="day__temp">
+                    {{weatherService.getTempByDay(2)}}
+                </div>
+            </div>
+        </li>
+        <li class="day_detail" (click)="wasClicked(3)">
+            <div class="day__info">
+                Friday
+                <p class="day__date">24 June</p>
+            </div>
+            <div class="day__img">
+                <img class="day__image" src="{{weatherService.getWeatherIconByDay(3)}}" alt="">
+                <div class="day__temp">
+                    {{weatherService.getTempByDay(3)}}
+                </div>
+            </div>
+        </li>
+        <li class="day_detail" (click)="wasClicked(4)">
+            <div class="day__info">
+                Saturday
+                <p class="day__date">25 June</p>
+            </div>
+            <div class="day__img">
+                <img class="day__image" src="{{weatherService.getWeatherIconByDay(4)}}" alt="">
+                <div class="day__temp">
+                    {{weatherService.getTempByDay(4)}}
+                </div>
+            </div>
+        </li>
+
+    </ul>
+    <div class="weather__city-info">
+        <div class="weather__city-forecast">5 DAYS DAILY FORECAST</div>
+        <div class="img-forecast">
+            <img class="weather__city-img" src="assets/images/home-forecast.png" alt="forecast"/>
+        </div>
+        <h4 class="weather__city-name">{{getCityName()}}</h4>
+        <h5 class="weather__country_name">{{ getCountry() }}</h5>
+        <button class="weather__city-save-btn"
+                *ngIf="authService.isAuthenticated()"
+                (click)="onLocationSave()"
+        ><span>Save location</span></button>
+    </div>
+    <div class="weather__card-info">
+        <div class="weather_details-img">
+            <img src="{{getIconURL()}}" alt="weather-icon" class="weather__det_img">
+            <div class="weather_det-full-day">14th Mar 22</div>
+            <div class="weather_det-full-day-time">Monday {{convertMsToTime(getSunRise())}} AM</div>
+            <div class="weather-temps">
+                <div class="weather-temp temp-min">
+                    <div class="temp-name">MIN TEMP</div>
+                    <div class="temp-degree">{{getMinTemp()}}°</div>
+                    <div class="temp-kk">Min</div>
+                </div>
+                <div class="weather-temp temp-min">
+                    <div class="temp-name">MAX TEMP</div>
+                    <div class="temp-degree">{{getMaxTemp()}}°</div>
+                    <div class="temp-kk">Max</div>
+                </div>
+                <img src="assets/images/weather-line.png" class="weather-line" alt="line">
+            </div>
+            <div class="weather-suns">
+                <div class="weather-sun">
+                    <img src="assets/images/dawn.png" alt="dawn">
+                    <div class="weather-sun-time">{{convertMsToTime(getSunRise())}}</div>
+                </div>
+                <div class="weather-sun weather-sun1">
+                    <img src="assets/images/sunset.png" alt="sunset">
+                    <div class="weather-sun-time">{{convertMsToTime(getSunset()) }}</div>
+                </div>
+            </div>
+        </div>
+        <div class="weather_details-footer">
+            <div class="weather__footer_prop">
+                <img src="assets/images/humility.png" alt="humility" class="prop_icon">
+                <div class="prop_name">HUMIDITY</div>
+                <div class="prop_value">{{getHumidity()}}%</div>
+            </div>
+            <div class="weather__footer_prop">
+                <img src="assets/images/wind.png" alt="wind" class="prop_icon">
+                <div class="prop_name">WIND</div>
+                <div class="prop_value">{{getWind()}} km/h</div>
+            </div>
+            <div class="weather__footer_prop">
+                <img src="assets/images/Group.png" alt="humility" class="prop_icon">
+                <div class="prop_name">FEELS LIKE</div>
+                <div class="prop_value">{{getFeelslike()}}°</div>
+            </div>
+        </div>
+    </div>
+</section>

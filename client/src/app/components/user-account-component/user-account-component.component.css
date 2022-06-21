@@ -1,0 +1,203 @@
+.user-locations {
+    height: 532px;
+    margin-top: 5px;
+    border-radius: 14px;
+    background-image: url("../../../assets/images/locations-image.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 32px 42px;
+}
+
+.user__account {
+    width: 382px;
+    display: flex;
+    flex-direction: column;
+    height: 285px;
+}
+
+.user__personal {
+    display: flex;
+    flex-direction: row;
+}
+
+.user__personal > div {
+    width: 132px;
+    height: 132px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user__img {
+    width: 112px;
+    height: 112px;
+    border-radius: 14px;
+}
+
+.user__name {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+
+.user__email {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 14px;
+    gap: 12px;
+    width: 199px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 24px;
+}
+
+.user__email > span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    background: linear-gradient(90deg, #FBFFBA 0%, #D5FFB5 34.86%, #FFEE93 66.67%, #FFECA4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*background-clip: text;*/
+    text-fill-color: transparent;
+
+}
+
+.user__name {
+    margin-top: 30px;
+    margin-left: 24px;
+}
+
+.location__slider {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.user__location {
+    width: 312px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 14px;
+}
+
+.location__bg {
+    height: 346px;
+    width: 312px;
+    /*background: url("../../../assets/images/mumbai.jpg") center center no-repeat;*/
+    background-size: cover;
+    border-radius: 14px 14px 0px 0px;
+    /*background: linear-gradient(324.84deg, rgba(239, 188, 56, 0.136) 14.05%, rgba(250, 186, 24, 0.2) 100%), linear-gradient(271.24deg, #FDD368 -4.18%, #F8B70F -4.17%, rgba(222, 194, 123, 0.6) 110.03%), url("../../../assets/images/mumbai.jpg") center center no-repeat;*/
+    /*box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);*/
+
+    /*background: linear-gradient(322.09deg, rgba(249, 57, 57, 0.2) 13.99%, rgba(255, 98, 98, 0.2) 104.25%), linear-gradient(273.21deg, #F94545 -7%, rgba(255, 80, 80, 0.65) 102.49%), url("../../../assets/images/mumbai.jpg") center center no-repeat;*/
+    box-shadow: 0px 8px 16px rgba(24, 19, 6, 0.25);
+    padding-top: 24px;
+    padding-left: 24px;
+
+}
+
+.location__short {
+    border-radius: 0px 0px 14px 14px ;
+    background-color: #FFFFFF;
+}
+
+.location__temperature {
+    position: relative;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 54px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+
+.location__temperature span {
+    position: absolute;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    top: -20px;
+    left: 55px;
+}
+
+.location__name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+
+.location__short {
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.location__date {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.location__descr {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.location__temp {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.user__location:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.user__account-personal {
+    margin-left: 43px;
+    margin-top: 54px;
+    display: flex;
+    flex-direction: row;
+    width: 170px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user__account-personal > p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: #000000;
+}
+
+.user__account-personal > div {
+    display: block;
+    height: 24px;
+    align-self: center;
+}
+

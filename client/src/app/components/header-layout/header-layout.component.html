@@ -1,0 +1,22 @@
+<header>
+    <div class="search-bar">
+        <h2 class="header__logo">MINIMAL WEATHER</h2>
+        <form class="header__search-form" action="#">
+            <div class="header__search-location">
+                <img src="assets/icons/search.png" alt="search-icon">
+                <input ngx-google-places-autocomplete
+                       [options]="options"
+                       (onAddressChange)="handleAddressChange($event)" class="search-box" type="text">
+            </div>
+            <button class="header__search-btn" type="submit">Search</button>
+        </form>
+        <button
+            (click)="onLogout()"
+            *ngIf="auth.isAuthenticated()"
+            class="header__sign-out"
+        >
+            <img src="assets/icons/icons8-sign-out-32.png" alt="sign-out">
+        </button>
+    </div>
+</header>
+

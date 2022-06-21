@@ -1,0 +1,72 @@
+<section class="contact">
+    <header class="contact__header">
+        <p class="contact__pre-header">Submit your message</p>
+        <h1 class="contact__title">Fill the form to get advice</h1>
+
+        <p class="contact__descr">Lorem ipsum dolor sit amet consectetur adipiscing elit posuere vel venenatis eu
+            sit
+            massa volutpat massa rhoncus odio feugiat tellus, elit massa sed.</p>
+    </header>
+    <div class="contact__form">
+        <form method="post" enctype="multipart/form-data">
+            <div class="contact__fields">
+                <div class="form__field">
+                    <label>
+                        <p>Name</p>
+                        <div>
+                            <input type="text" name="name" placeholder="Name">
+                            <img src="assets/icons/feedback/name.svg" alt="name">
+                        </div>
+                    </label>
+                </div>
+                <div class="form__field">
+                    <label>
+                        <p>Email</p>
+                        <div>
+                            <input type="text" name="email" placeholder="Email">
+                            <img src="assets/icons/feedback/email.svg" alt="email">
+                        </div>
+                    </label>
+                </div>
+                <div class="form__field">
+                    <label>
+                        <p>Phone number</p>
+                        <div>
+                            <input type="text" name="phone" placeholder="Phone number">
+                            <img src="assets/icons/feedback/phone.svg" alt="phone">
+                        </div>
+                    </label>
+                </div>
+                <div class="form__field">
+                    <label>
+                        <p>Company</p>
+                        <div>
+                            <input type="text" name="company" placeholder="Company">
+                            <img src="assets/icons/feedback/company.svg" alt="company">
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <p class="form__service">Your service rating</p>
+            <div class="star-widget">
+                <input type="radio" name="rate" id="rate-5" value="5">
+                <label for="rate-5" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-4" value="4">
+                <label for="rate-4" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-3" value="3">
+                <label for="rate-3" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-2" value="2">
+                <label for="rate-2" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-1" value="1">
+                <label for="rate-1" class="fas fa-star"></label>
+            </div>
+            <p class="form__feedback">Additional feedback</p>
+            <label>
+                <textarea placeholder="If you have any additional feedback, please type it in here..." type="text" class="form__feedback-section"></textarea>
+            </label>
+            <button class="form__submit">
+                Submit feedback
+            </button>
+        </form>
+    </div>
+</section>
